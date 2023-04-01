@@ -14,7 +14,7 @@ export default function PostContent({ post }: { post: PostData }) {
       <h3 className="text-lg md:text-xl text-black/70 mt-1 lg:mt-2">
         {description}
       </h3>
-      <div className="flex items-center pt-4 gap-2 text-black/60">
+      <div className="flex items-center pt-4 gap-2 text-black/60 mb-8 md:mb-12 lg:mb-16">
         <div className="rounded-full overflow-hidden w-8 bg-zinc-400">
           <Image src={avatar} alt="avatar" width={120} height={120} />
         </div>
@@ -23,7 +23,7 @@ export default function PostContent({ post }: { post: PostData }) {
           {date.toLocaleString("ko-KR", { timeZone: "UTC" })}
         </span>
       </div>
-      <div className="border-b my-6 md:my-8 lg:my-12" />
+      {/* <div className="border-b my-6 md:my-8 lg:my-12" /> */}
       <MarkDownViewer content={content} />
     </section>
   );

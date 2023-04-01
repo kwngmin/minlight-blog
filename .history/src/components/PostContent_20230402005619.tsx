@@ -6,7 +6,7 @@ import avatar from "../../public/images/avatar-hands-up.png";
 export default function PostContent({ post }: { post: PostData }) {
   const { title, description, date, category, content } = post;
   return (
-    <section className="border py-4 px-6 sm:p-8 md:px-16 md:pb-12 lg:px-32 lg:pb-16 lg:pt-8">
+    <section className="border p-4 sm:p-8 md:px-16 md:pb-12 md:pt-8 lg:px-32 lg:pb-16 lg:pt-10">
       <span className="bg-slate-200 text-slate-500 px-2 py-1 rounded-sm">
         {category}
       </span>

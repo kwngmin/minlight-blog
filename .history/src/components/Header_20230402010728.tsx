@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="w-full flex justify-between items-center p-4 mx-auto max-w-screen-lg">
       <Link href="/">
-        <h1 className="text-3xl font-bold">Minlight</h1>
+        <h1 className="text-3xl font-bold">minlight</h1>
       </Link>
       <nav className="flex gap-4">
         {navData.map(({ name, path }) => (
