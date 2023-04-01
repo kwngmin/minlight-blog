@@ -1,5 +1,4 @@
 import AboutTable from "@/components/AboutTable";
-import Hero from "@/components/Hero";
 
 export default function AboutPage() {
   const careerData = [
@@ -33,9 +32,8 @@ export default function AboutPage() {
   ];
   return (
     <>
-      <Hero />
-      <AboutTable tableData={careerData} subject={`Work Experience`} />
-      <AboutTable tableData={educateData} subject={`Education`} />
+      <AboutTable tableData={careerData} subject={`Worked at`} />
+      <AboutTable tableData={educateData} subject={`Studied at`} />
     </>
   );
 }

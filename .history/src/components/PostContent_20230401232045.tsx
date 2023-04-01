@@ -15,7 +15,7 @@ export default function PostContent({ post }: { post: PostData }) {
         {description}
       </h3>
       <div className="flex items-center pt-4 gap-2 text-black/60">
-        <div className="rounded-full overflow-hidden w-8 bg-zinc-400">
+        <div className="rounded-full overflow-hidden w-8 bg-zinc-300">
           <Image src={avatar} alt="avatar" width={120} height={120} />
         </div>
         <span>Kwngmin</span>·
