@@ -9,7 +9,7 @@ type Props = {
 
 export default function AboutTable({ tableData, subject }: Props) {
   return (
-    <article className="my-12">
+    <article className="mt-12">
       <h2 className="text-center lg:text-left text-3xl font-semibold text-slate-500 py-4">
         {subject}
       </h2>
