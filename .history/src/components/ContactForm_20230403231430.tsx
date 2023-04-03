@@ -23,6 +23,7 @@ export default function ContactForm() {
   };
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(e.target);
     sendContactEmail(form)
       .then(() => {
         setBanner({
@@ -90,7 +91,7 @@ export default function ContactForm() {
           onChange={onChange}
           className={INPUT_BOX}
         />
-        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white my-3">
+        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white">
           Send Email
         </button>
       </form>

@@ -2,20 +2,19 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import TextareaAutosize from "react-textarea-autosize";
 import Banner, { BannerData } from "./Banner";
-import { sendContactEmail } from "@/service/contact";
+import { sendEmail } from "@/service/contact";
 
 type Form = {
   from: string;
   subject: string;
   message: string;
 };
-const DEFAULT_DATA = {
-  from: "",
-  subject: "",
-  message: "",
-};
 export default function ContactForm() {
-  const [form, setForm] = useState<Form>(DEFAULT_DATA);
+  const [form, setForm] = useState<Form>({
+    from: "",
+    subject: "",
+    message: "",
+  });
   const [banner, setBanner] = useState<BannerData | null>(null);
   const onChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -23,13 +22,18 @@ export default function ContactForm() {
   };
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    sendContactEmail(form)
+    console.log(e.target);
+    sendEmail(form)
       .then(() => {
         setBanner({
           message: "메일을 성공적으로 발송했습니다.",
           state: "success",
         });
-        setForm(DEFAULT_DATA);
+        setForm({
+          from: "",
+          subject: "",
+          message: "",
+        });
       })
       .catch(() => {
         setBanner({
@@ -90,7 +94,7 @@ export default function ContactForm() {
           onChange={onChange}
           className={INPUT_BOX}
         />
-        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white my-3">
+        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white">
           Send Email
         </button>
       </form>
