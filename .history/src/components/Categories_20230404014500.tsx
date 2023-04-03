@@ -13,8 +13,7 @@ export default function Categories({ categories, selected, onClick }: Props) {
             key={category}
             onClick={() => onClick(category)}
             className={`shrink-0 text-lg font-medium rounded-full px-5 py-2 text-black/70 lg:hover:bg-zinc-200 ${
-              category === selected &&
-              "bg-slate-600 text-white lg:hover:bg-slate-800"
+              category === selected && "bg-slate-600 text-white"
             }`}
           >
             {category}
