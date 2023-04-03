@@ -20,8 +20,8 @@ export default function PostCard({
         <Image
           src={`/images/posts/${path}.png`}
           alt={path}
-          width={180}
-          height={100}
+          width={360}
+          height={198}
           className="w-full"
         />
         <div className="p-4">

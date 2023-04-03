@@ -22,7 +22,7 @@ export default function PostCard({
           alt={path}
           width={180}
           height={100}
-          className="w-full"
+          // className="w-full"
         />
         <div className="p-4">
           <div className="flex justify-between mb-2 items-center">
