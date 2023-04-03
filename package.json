@@ -22,6 +22,8 @@
     "react-multi-carousel": "^2.8.2",
     "react-syntax-highlighter": "^15.5.0",
     "remark-gfm": "^3.0.1",
+    "timeago-react": "^3.0.6",
+    "timeago.js": "^4.0.2",
     "typescript": "5.0.2"
   },
   "devDependencies": {
