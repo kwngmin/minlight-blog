@@ -14,7 +14,7 @@ export default function ContactPage() {
       <ul className="flex justify-center items-center gap-2">
         <a
           href="mailto:kwngmin.k@gmail.com"
-          className="px-8 rounded-full hover:bg-black hover:text-white h-16 border flex justify-center items-center"
+          className="px-6 rounded-full hover:bg-black hover:text-white py-2 border"
         >
           kwngmin.k@gmail.com
         </a>
@@ -24,7 +24,7 @@ export default function ContactPage() {
             key={index}
             target="_blank"
             rel="noreferrer"
-            className="text-3xl text-black/80 hover:bg-black hover:text-white rounded-full h-16 w-16 border flex justify-center items-center"
+            className="text-2xl text-black/80 hover:bg-black hover:text-white rounded-full p-2 border"
           >
             {icon}
           </a>

@@ -10,11 +10,11 @@ export default function ContactPage() {
   ];
   return (
     <section className="flex flex-col items-center gap-2 max-w-xl mx-auto">
-      <h2 className="text-2xl font-semibold my-4">Contact Me</h2>
+      {/* <h2 className="text-2xl font-semibold my-4">Contact Me</h2> */}
       <ul className="flex justify-center items-center gap-2">
         <a
           href="mailto:kwngmin.k@gmail.com"
-          className="px-8 rounded-full hover:bg-black hover:text-white h-16 border flex justify-center items-center"
+          className="px-6 rounded-full hover:bg-black hover:text-white h-16 border flex justify-center items-center"
         >
           kwngmin.k@gmail.com
         </a>
