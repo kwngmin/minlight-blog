@@ -44,13 +44,14 @@ export default function ContactForm() {
       });
   };
   const INPUT_LABEL = "font-medium text-black/60 mb-1";
-  const INPUT_BOX = "mb-4 resize-none px-3 py-2 border rounded bg-zinc-50";
+  const INPUT_BOX =
+    "mb-4 resize-none px-2 lg:px-3 py-2 border rounded bg-zinc-50";
   return (
     <section className="w-full">
       {banner && <Banner banner={banner} />}
       <form
         onSubmit={onSubmit}
-        className="flex flex-col border p-6 lg:p-8 w-full rounded-lg"
+        className="flex flex-col border p-8 w-full rounded-lg"
       >
         <label htmlFor="from" className={INPUT_LABEL}>
           Your Email

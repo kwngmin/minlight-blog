@@ -14,7 +14,7 @@ export default function ContactPage() {
       <ul className="flex justify-center items-center gap-2">
         <a
           href="mailto:kwngmin.k@gmail.com"
-          className="px-6 lg:px-8 rounded-full lg:hover:bg-black lg:hover:text-white h-12 lg:h-16 border flex justify-center items-center"
+          className="px-8 rounded-full lg:hover:bg-black lg:hover:text-white h-12 lg:h-16 border flex justify-center items-center"
         >
           kwngmin.k@gmail.com
         </a>
