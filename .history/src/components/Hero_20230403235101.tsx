@@ -21,7 +21,7 @@ export default function Hero() {
           href="https://github.com/kwngmin"
           target="_blank"
           rel="noreferrer"
-          className="ring-1 hover:ring-0 ring-slate-300 hover:bg-black px-5 font-medium text-slate-600 hover:text-white rounded-full"
+          className="border border-slate-300 hover:bg-gray-100 px-5 font-medium text-slate-600 rounded-full"
         >
           <button className="flex items-center h-10">
             <BsGithub size={24} className="mr-2" /> GitHub
