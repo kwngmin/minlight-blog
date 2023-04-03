@@ -30,6 +30,7 @@ export const getAllPosts = cache(async () => {
     .then<Post[]>(JSON.parse)
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 });
+
 export async function getPostData(fileName: String): Promise<PostData> {
   const filePath = path.join(process.cwd(), "data/posts", `${fileName}.md`);
   const posts = await getAllPosts(); //

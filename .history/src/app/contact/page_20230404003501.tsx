@@ -3,8 +3,8 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export const metadata = {
   title: {
-    default: "Contact Me",
-    template: "Send an Email to Kwngmin",
+    default: "About Me",
+    template: "About Kwngmin's Career",
   },
 };
 

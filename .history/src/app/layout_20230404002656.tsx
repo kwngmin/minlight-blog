@@ -11,7 +11,6 @@ export const metadata = {
     template: "Minlight Blog | %s",
   },
   description: "Front end Developer & Designer - Minlight Blog",
-  icons: { icon: "favicon.ico" },
 };
 
 export default function RootLayout({

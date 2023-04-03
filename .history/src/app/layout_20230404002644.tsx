@@ -7,11 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Minlight Blog",
-    template: "Minlight Blog | %s",
+    default: "Minlight Log",
+    template: "Minlight Log | %s",
   },
-  description: "Front end Developer & Designer - Minlight Blog",
-  icons: { icon: "favicon.ico" },
+  description: "Front end Developer & Designer - Minlight Log",
 };
 
 export default function RootLayout({
