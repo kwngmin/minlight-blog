@@ -28,7 +28,7 @@ export default function Hero() {
           </button>
         </a>
         <Link href="/contact">
-          <button className="rounded-full bg-slate-500  hover:bg-slate-600 px-5 h-10 text-white/90 font-medium">
+          <button className="rounded-full bg-slate-500  hover:bg-slate-600 px-4 h-10 text-white/90 font-medium">
             Contact Me
           </button>
         </Link>

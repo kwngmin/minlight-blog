@@ -21,14 +21,14 @@ export default function Hero() {
           href="https://github.com/kwngmin"
           target="_blank"
           rel="noreferrer"
-          className="ring-1 ring-zinc-300 hover:bg-gray-100 px-5 font-medium text-black/70 rounded-full"
+          className="ring-1 ring-zinc-300 hover:bg-gray-100 px-5 py-1 font-medium text-black/70 rounded-full"
         >
-          <button className="flex items-center h-10">
+          <button className="flex items-center">
             <AiFillGithub size={20} className="mr-2" /> GitHub
           </button>
         </a>
         <Link href="/contact">
-          <button className="rounded-full bg-slate-500  hover:bg-slate-600 px-5 h-10 text-white/90 font-medium">
+          <button className="rounded-full bg-slate-500  hover:bg-slate-600 px-4 py-1 text-white font-medium">
             Contact Me
           </button>
         </Link>
