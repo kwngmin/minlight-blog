@@ -56,7 +56,7 @@ export default function AboutPage() {
         <h2 className="text-center lg:text-left text-3xl font-semibold text-slate-500 py-8 lg:py-4">
           Stacks
         </h2>
-        <ul className="flex lg:justify-start justify-center items-center py-4 lg:h-16 border-t gap-2 lg:px-8 flex-wrap content-center">
+        <ul className="flex lg:justify-start justify-center items-center py-4 lg:h-16 border-t gap-1.5 lg:gap-2 lg:px-8 flex-wrap content-center">
           {stacks.map((stack, index) => (
             <li
               className="font-semibold text-lg bg-slate-100 px-3 lg:px-4 py-1 rounded-full"
