@@ -1,6 +1,7 @@
 "use client";
 import { ChangeEvent, FormEvent, useState } from "react";
 import TextareaAutosize from "react-textarea-autosize";
+import { BsSendCheck } from "react-icons/bs";
 import Banner, { BannerData } from "./Banner";
 
 type Form = {
@@ -22,15 +23,15 @@ export default function ContactForm() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(e.target);
-    setBanner({ message: "이메일을 발송했습니다.", state: "success" });
+    setBanner({ message: "성공했어", state: "success" });
+    // setTimeout(() => {
+    //   setBanner(null);
+    // }, 5000);
     // setForm({
     //   from: "",
     //   subject: "",
     //   message: "",
     // });
-    setTimeout(() => {
-      setBanner(null);
-    }, 4000);
   };
   const INPUT_LABEL = "font-medium text-black/60 mb-1";
   const INPUT_BOX = "mb-4 resize-none px-3 py-2 border rounded bg-zinc-50";
@@ -79,7 +80,7 @@ export default function ContactForm() {
           onChange={onChange}
           className={INPUT_BOX}
         />
-        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white">
+        <button className="bg-zinc-100 hover:bg-zinc-300 rounded-lg h-12 font-medium">
           Send Email
         </button>
       </form>

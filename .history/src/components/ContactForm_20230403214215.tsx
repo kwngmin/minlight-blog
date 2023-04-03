@@ -79,7 +79,7 @@ export default function ContactForm() {
           onChange={onChange}
           className={INPUT_BOX}
         />
-        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white">
+        <button className="bg-slate-500 hover:bg-zinc-300 rounded-lg h-12 font-medium">
           Send Email
         </button>
       </form>

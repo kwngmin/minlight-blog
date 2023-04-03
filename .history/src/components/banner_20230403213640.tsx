@@ -17,15 +17,13 @@ export default function Banner({
   return (
     <div
       className={`px-4 mb-6 rounded-lg flex flex-col items-center py-6 ${
-        isSuccess ? "bg-emerald-50 text-emerald-600" : "bg-red-50 text-red-600"
+        !isSuccess ? "bg-emerald-50 text-emerald-600" : "bg-red-50 text-red-600"
       }`}
     >
       <div className="rounded-full w-24 h-24 mb-3 flex justify-center items-center bg-white">
         {icon}
       </div>
-      <span className={`${isSuccess ? "text-emerald-700" : "text-red-700"}`}>
-        {message}
-      </span>
+      <span className="text-emerald-700">{message}</span>
     </div>
   );
 }

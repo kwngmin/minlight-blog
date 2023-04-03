@@ -1,7 +1,9 @@
 "use client";
 import { ChangeEvent, FormEvent, useState } from "react";
+// import Banner, { BannerData } from "./banner";
 import TextareaAutosize from "react-textarea-autosize";
-import Banner, { BannerData } from "./Banner";
+import { BsSendCheck } from "react-icons/bs";
+import { BannerData } from "./Banner";
 
 type Form = {
   from: string;
@@ -22,21 +24,28 @@ export default function ContactForm() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(e.target);
-    setBanner({ message: "이메일을 발송했습니다.", state: "success" });
+    setBanner({ message: "성공했어", state: "success" });
+    // setTimeout(() => {
+    //   setBanner(null);
+    // }, 5000);
     // setForm({
     //   from: "",
     //   subject: "",
     //   message: "",
     // });
-    setTimeout(() => {
-      setBanner(null);
-    }, 4000);
   };
-  const INPUT_LABEL = "font-medium text-black/60 mb-1";
-  const INPUT_BOX = "mb-4 resize-none px-3 py-2 border rounded bg-zinc-50";
+  const INPUT_LABEL = "font-medium text-black/40 mb-1";
+  const INPUT_BOX = "mb-4 resize-none px-3 py-3 border rounded bg-zinc-50";
   return (
     <section className="w-full">
-      {banner && <Banner banner={banner} />}
+      {/* {banner && <Banner banner={banner} />}
+       */}
+      <div className="px-4 mb-6 rounded flex flex-col items-center text-emerald-800 font-medium">
+        <div className="bg-emerald-200 rounded-full w-28 h-28 mb-4 flex justify-center items-center border-4 border-emerald-400">
+          <BsSendCheck size={64} className="text-emerald-700 mr-2" />
+        </div>
+        <span>{`이메일을 발송했습니다`}</span>
+      </div>
       <form
         onSubmit={onSubmit}
         className="flex flex-col border p-8 w-full rounded-lg"
@@ -79,7 +88,7 @@ export default function ContactForm() {
           onChange={onChange}
           className={INPUT_BOX}
         />
-        <button className="bg-slate-500 hover:bg-slate-400 rounded-lg h-12 font-medium text-white">
+        <button className="bg-zinc-100 hover:bg-zinc-300 rounded-lg h-12">
           Send Email
         </button>
       </form>

@@ -10,22 +10,17 @@ export default function Banner({
 }) {
   const isSuccess = state === "success";
   const icon = isSuccess ? (
-    <BsSendCheck size={56} className="mr-2 mt-1" />
+    <BsSendCheck size={56} className={} />
   ) : (
-    <BsSendX size={56} className="mr-2 mt-1" />
+    <BsSendX size={56} className={} />
   );
+  const BANNER_ICON = "mr-2 mt-1";
   return (
-    <div
-      className={`px-4 mb-6 rounded-lg flex flex-col items-center py-6 ${
-        isSuccess ? "bg-emerald-50 text-emerald-600" : "bg-red-50 text-red-600"
-      }`}
-    >
+    <div className="px-4 mb-6 rounded-lg flex flex-col items-center bg-emerald-50 py-6 text-emerald-600">
       <div className="rounded-full w-24 h-24 mb-3 flex justify-center items-center bg-white">
         {icon}
       </div>
-      <span className={`${isSuccess ? "text-emerald-700" : "text-red-700"}`}>
-        {message}
-      </span>
+      <span className="text-emerald-700">{message}</span>
     </div>
   );
 }

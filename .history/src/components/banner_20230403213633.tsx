@@ -23,9 +23,7 @@ export default function Banner({
       <div className="rounded-full w-24 h-24 mb-3 flex justify-center items-center bg-white">
         {icon}
       </div>
-      <span className={`${isSuccess ? "text-emerald-700" : "text-red-700"}`}>
-        {message}
-      </span>
+      <span className="text-emerald-700">{message}</span>
     </div>
   );
 }
