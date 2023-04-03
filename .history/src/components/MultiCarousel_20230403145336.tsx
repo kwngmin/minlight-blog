@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Children } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -28,7 +28,7 @@ export default function MultiCarousel({ children }: props) {
       infinite
       autoPlay
       itemClass="m-2"
-      className="bg-zinc-50 border border-zinc-200 my-4 pt-2 pb-6 rounded-xl"
+      className="left-0"
     >
       {children}
     </Carousel>

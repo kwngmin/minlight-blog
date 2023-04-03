@@ -17,21 +17,27 @@ export default function Hero() {
       <h2 className="text-lg font-medium">Front end Developer & Designer</h2>
       <p className="text-black/60">{`I'm always thinking about designing a better user experience.`}</p>
       <section className="flex justify-center gap-2 my-2">
-        <a
-          href="https://github.com/kwngmin"
-          target="_blank"
-          rel="noreferrer"
-          className="ring-1 ring-zinc-300 hover:bg-gray-100 px-5 py-1 font-medium text-black/70 rounded-full"
-        >
-          <button className="flex items-center">
-            <AiFillGithub size={20} className="mr-2" /> GitHub
-          </button>
-        </a>
         <Link href="/contact">
           <button className="rounded-full bg-slate-500  hover:bg-slate-600 px-4 py-1 text-white">
             Contact Me
           </button>
         </Link>
+        <a
+          href="https://github.com/kwngmin"
+          target="_blank"
+          rel="noreferrer"
+          className="border-1 border-gray-400 px-6 py-1 font-medium text-black/70 flex items-center rounded-full"
+        >
+          <AiFillGithub size={18} className="mr-1" /> GitHub
+        </a>
+        {/* <a
+          href="https://github.com/kwngmin"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-black/70 hover:bg-black px-1.5 py-1 text-white flex items-center rounded-full"
+        >
+          <AiFillGithub size={22} />
+        </a> */}
       </section>
     </section>
   );

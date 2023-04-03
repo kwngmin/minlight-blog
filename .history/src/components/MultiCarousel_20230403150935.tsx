@@ -28,7 +28,7 @@ export default function MultiCarousel({ children }: props) {
       infinite
       autoPlay
       itemClass="m-2"
-      className="bg-zinc-50 border border-zinc-200 my-4 pt-2 pb-6 rounded-xl"
+      className="bg-slate-200 my-4 pt-2 pb-6 rounded-xl"
     >
       {children}
     </Carousel>

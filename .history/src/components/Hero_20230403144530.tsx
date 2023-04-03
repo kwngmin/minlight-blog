@@ -21,9 +21,9 @@ export default function Hero() {
           href="https://github.com/kwngmin"
           target="_blank"
           rel="noreferrer"
-          className="ring-1 ring-zinc-300 hover:bg-gray-100 px-5 py-1 font-medium text-black/70 rounded-full"
+          className="ring-1 ring-zinc-400 hover:bg-gray-100 px-4 py-1 font-medium text-black/70 flex items-center rounded-full"
         >
-          <button className="flex items-center">
+          <button>
             <AiFillGithub size={20} className="mr-2" /> GitHub
           </button>
         </a>

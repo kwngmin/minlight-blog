@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import Link from "next/link";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 export default function ContactPage() {
   const LINKS = [
@@ -12,15 +12,13 @@ export default function ContactPage() {
     <>
       <h2>Contact Me</h2>
       <p>kwngmin.k@gmail.com</p>
-      <ul>
-        {LINKS.map(({ url, icon }, index) => (
-          <a href={url} key={index} target="_blank" rel="noreferrer">
-            {icon}
-          </a>
+      <div>
+        {LINKS.map(link, (index) => (
+          <Link href={link.url} key={index}>
+            {link.icon}
+          </Link>
         ))}
-      </ul>
-      <h2>Or Send me an email</h2>
-      <ContactForm />
+      </div>
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function PostCard({
   )}월 ${dateData[2].replace("0", "")}일`;
   return (
     <Link href={`/posts/${path}`}>
-      <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl mt-3 hover:ring-4 hover:ring-slate-400">
+      <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl mt-3 hover:ring-4 hover:ring-slate-300">
         <Image
           src={`/images/posts/${path}.png`}
           alt={path}
