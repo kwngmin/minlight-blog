@@ -29,25 +29,14 @@ export default function AboutPage() {
     },
     {
       organization: "IDAS, Hongik Univeristy",
-      role: "Digital Media Design Major · Master of Design",
+      role: "Digital Media Design Major | Master of Design",
       period: "2013.03 - 2015.02",
     },
     {
       organization: "Kangnam University",
-      role: "Visual Design Major · Bachelor of Fine Arts",
+      role: "Visual Design Major | Bachelor of Fine Arts",
       period: "2005.03 - 2012.02",
     },
-  ];
-  const stacks = [
-    "Next",
-    "React",
-    "Node",
-    "Typescript",
-    "Javascript",
-    "HTML/CSS",
-    "Git",
-    "VS Code",
-    "Figma",
   ];
   return (
     <>
@@ -56,15 +45,12 @@ export default function AboutPage() {
         <h2 className="text-center lg:text-left text-3xl font-semibold text-slate-500 py-8 lg:py-4">
           Stacks
         </h2>
-        <ul className="flex lg:justify-start justify-center items-center h-28 lg:h-16 border-t gap-1.5 lg:gap-2 lg:px-8 flex-wrap content-center">
-          {stacks.map((stack, index) => (
-            <li
-              className="font-semibold text-lg bg-slate-100 px-3 lg:px-4 py-1 rounded-full"
-              key={index}
-            >
-              {stack}
-            </li>
-          ))}
+        <ul>
+          <li className="flex flex-col justify-center lg:justify-start lg:flex-row items-center h-28 lg:h-16 border-t gap-0 lg:gap-4 px-8">
+            <h3 className="font-bold text-xl text-black/80">
+              Next, Node, React, Typescript, Javascript, HTML/CSS, Git, VS Code
+            </h3>
+          </li>
         </ul>
       </section>
       <AboutTable tableData={careerData} subject={`Work Experience`} />
