@@ -1,7 +1,7 @@
 [
   {
     "title": "CodeTech",
-    "description": "팀 프로젝트 · 테크리뷰 반응형 웹 플랫폼",
+    "description": "테크리뷰 반응형 웹 플랫폼",
     "date": "2023-04-13",
     "category": "React.js",
     "path": "codetech",
@@ -9,8 +9,8 @@
   },
   {
     "title": "UnStackOverflow",
-    "description": "팀 프로젝트 · StackOverflow 클론코딩",
-    "date": "2023-04-12",
+    "description": "StackOverflow 클론코딩",
+    "date": "2022-04-12",
     "category": "React.js",
     "path": "unstackoverflow",
     "featured": true
