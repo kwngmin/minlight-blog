@@ -1,21 +1,5 @@
 [
   {
-    "title": "CodeTech",
-    "description": "코드스테이츠 SEB 40기 메인 프로젝트",
-    "date": "2022-12-07",
-    "category": "React.js",
-    "path": "codetech",
-    "featured": true
-  },
-  {
-    "title": "UnStackOverflow",
-    "description": "코드스테이츠 SEB 40기 프리 프로젝트",
-    "date": "2022-11-07",
-    "category": "React.js",
-    "path": "unstackoverflow",
-    "featured": true
-  },
-  {
     "title": "2021년 리뷰",
     "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2021-12-31",
@@ -50,7 +34,7 @@
   {
     "title": "2022년 리뷰",
     "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2022-10-31",
+    "date": "2022-12-31",
     "category": "my story",
     "path": "review-2022",
     "featured": false
@@ -58,7 +42,7 @@
   {
     "title": "Node 프로 팁!",
     "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
-    "date": "2022-07-10",
+    "date": "2023-04-10",
     "category": "backend",
     "path": "node-pro-tips",
     "featured": true
@@ -66,7 +50,7 @@
   {
     "title": "리액트 Best Practice!",
     "description": "리액트를 정확하게 사용하는 방법들을 정리",
-    "date": "2022-08-15",
+    "date": "2023-04-15",
     "category": "frontend",
     "path": "best-react-practices",
     "featured": true
@@ -74,7 +58,7 @@
   {
     "title": "리액트 18버전!",
     "description": "리액트 18에 추가된 사항들 정리",
-    "date": "2022-09-02",
+    "date": "2023-05-02",
     "category": "frontend",
     "path": "react18-walkthrough",
     "featured": true
@@ -82,7 +66,7 @@
   {
     "title": "2023년 리뷰",
     "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2022-10-28",
+    "date": "2023-12-31",
     "category": "my story",
     "path": "review-2023",
     "featured": true

@@ -11,12 +11,12 @@ export default function Header() {
       <Link href="/">
         <h1 className="text-2xl font-bold">Minlight</h1>
       </Link>
-      <nav>
+      <nav className="flex gap-4 px-4 lg:px-0">
         {navData.map(({ name, path }) => (
           <Link
             href={path}
             key={path}
-            className="text-black/60 hover:text-black font-medium hover:underline decoration-slate-400 hover:decoration-4 underline-offset-8 px-3"
+            className="text-black/60 hover:text-black text-lg font-medium hover:underline decoration-slate-400 hover:decoration-4 underline-offset-8"
           >
             {name}
           </Link>
