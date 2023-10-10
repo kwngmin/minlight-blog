@@ -11,7 +11,7 @@ export const metadata = {
 export default function AboutPage() {
   const careerData = [
     {
-      organization: 'ITlog',
+      organization: 'Itlog',
       role: 'Frontend Developer & UX/UI Designer',
       period: '2023.06 - Now',
     },
